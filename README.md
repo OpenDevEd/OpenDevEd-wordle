@@ -1,57 +1,26 @@
 # OpenDevEd-wordle
-## Requirements:
-Your task is to create a web-based Wordle game using React that adheres to the following specifications:
+## Project Overview
+This project is about creating a Wordle web game using ReactJS. The game follows the classic Wordle rules where players guess a hidden word and receive feedback on the correctness of their guesses. The objective is to guess the hidden word within a limited number of attempts.
 
-### User Interface (UI):
+### How to run the application locally:
 
-Design a clean and intuitive UI for the game that includes:
-
-- Input field for guessing words.
-- Submit button to submit the guess.
-- Display area for previous guesses.
-= Indication of correct letters in correct positions (right letter, right position).
-- Indication of correct letters in the wrong position.
-- Display remaining attempts.
-- End game state UI (upon winning or losing).
-
-### State Management:
-
-Implement a robust state management system to handle:
-
-- Target word selection (randomly generate a word at the start of the game).
-- Storing user guesses and their results.
-- Tracking remaining attempts.
-
-### User Interaction:
-
-- Capture user input for word guesses.
-- Validate input (alphabetic characters, word length, etc.).
-- Handle the submission of guesses and update the game state accordingly.
-
+- Clone the Repository: ```git clone <repository-url>```
+- Navigate into the cloned directory: ```cd <project-directory>```
+- Navigate to my branch: ``` git checkout wordle-MohammedEd-dobaji ```
+= Then go to "wordle-game" folder : ``` cd wordle-game ```
+- Install the necessary dependencies: ``` npm install ```
+- Run the Application: ``` run start ``` 
+- This will start a development server and open the Wordle game in your default web browser
+- Access the Game: Once the server is running, open your web browser and go to http://localhost:3000.
+- Play the Game: You can now play the Wordle game locally in your browser.
 
 ### Game Logic:
 
-- Compare the user's guessed word against the target word.
-- Provide feedback to the user about the correctness of the guessed word.
-- End the game when the correct word is guessed or when the attempts reach zero.
-
-## Code Quality:
-
-- Write clean, readable, and maintainable code.
-- Implement best practices for React development.
-- Ensure error handling for edge cases (invalid input, unexpected behavior).
-
-## Submission Guidelines:
-
-- Fork this [repository](https://github.com/OpenDevEd/OpenDevEd-wordle/)) and create a new branch named `wordle-[YOUR NAME]`.
-- Provide clear instructions on how to run the application locally.
-- Include a README file explaining your approach, decisions made, and any additional features implemented.
-- Open a PR.
-
-## Evaluation Criteria:
-
-- UI/UX design and functionality.
-- Code quality, structure, and maintainability.
-- State management and logic implementation.
-- Handling of edge cases and error scenarios.
-- Bonus points for additional features or optimizations.
+- Win or Lose:
+    If you correctly guess the word within the given attempts, you win!
+    If you exhaust all attempts without guessing the word, you lose.
+- Restart the Game:
+    After winning or losing, the game will automatically refresh after a short delay to allow you to play again.
+- The game retrieves words from a JSON file using Axios.
+- The main component of the game is located in src/components/Arrays.js.
+- The game logic is defined in src/utils/GameLogic.js.
