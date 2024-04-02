@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Keyboard from './Keyboard';
 import GameLogic from '../utils/GameLogic';
 import Row from './Row';

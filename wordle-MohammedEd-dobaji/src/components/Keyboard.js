@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 
 function Keyboard( { target, buffer } ) {
     const qwerty = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm']
