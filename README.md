@@ -1,57 +1,25 @@
-# OpenDevEd-wordle
-## Requirements:
-Your task is to create a web-based Wordle game using React that adheres to the following specifications:
+# Wordle Game
 
-### User Interface (UI):
+This project is a React implementation of the popular word guessing game Wordle.
 
-Design a clean and intuitive UI for the game that includes:
+## Overview
 
-- Input field for guessing words.
-- Submit button to submit the guess.
-- Display area for previous guesses.
-= Indication of correct letters in correct positions (right letter, right position).
-- Indication of correct letters in the wrong position.
-- Display remaining attempts.
-- End game state UI (upon winning or losing).
+The project contains the following key features:
 
-### State Management:
+- Display a board to show guesses and feedback for each row
+- Show end game screen with win/loss message
+- Text input field and submit button to enter guesses
+- Main component to manage game state
+- Entry point to render main app component
+- Stylesheets for styling
+- Configuration for CSS framework
+- Package info and scripts
 
-Implement a robust state management system to handle:
+## Running Locally
 
-- Target word selection (randomly generate a word at the start of the game).
-- Storing user guesses and their results.
-- Tracking remaining attempts.
+To run the app locally:
 
-### User Interaction:
-
-- Capture user input for word guesses.
-- Validate input (alphabetic characters, word length, etc.).
-- Handle the submission of guesses and update the game state accordingly.
-
-
-### Game Logic:
-
-- Compare the user's guessed word against the target word.
-- Provide feedback to the user about the correctness of the guessed word.
-- End the game when the correct word is guessed or when the attempts reach zero.
-
-## Code Quality:
-
-- Write clean, readable, and maintainable code.
-- Implement best practices for React development.
-- Ensure error handling for edge cases (invalid input, unexpected behavior).
-
-## Submission Guidelines:
-
-- Fork this [repository](https://github.com/OpenDevEd/OpenDevEd-wordle/)) and create a new branch named `wordle-[YOUR NAME]`.
-- Provide clear instructions on how to run the application locally.
-- Include a README file explaining your approach, decisions made, and any additional features implemented.
-- Open a PR.
-
-## Evaluation Criteria:
-
-- UI/UX design and functionality.
-- Code quality, structure, and maintainability.
-- State management and logic implementation.
-- Handling of edge cases and error scenarios.
-- Bonus points for additional features or optimizations.
+1. Clone the repo
+2. Run `npm install` to install dependencies
+3. Run `npm start` to start the dev server
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
