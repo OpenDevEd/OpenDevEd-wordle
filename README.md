@@ -1,57 +1,53 @@
-# OpenDevEd-wordle
-## Requirements:
-Your task is to create a web-based Wordle game using React that adheres to the following specifications:
+# Wordly
 
-### User Interface (UI):
+Wordly is a fun and engaging word game built with React, TypeScript, and JavaScript.
 
-Design a clean and intuitive UI for the game that includes:
+## Installation
 
-- Input field for guessing words.
-- Submit button to submit the guess.
-- Display area for previous guesses.
-= Indication of correct letters in correct positions (right letter, right position).
-- Indication of correct letters in the wrong position.
-- Display remaining attempts.
-- End game state UI (upon winning or losing).
+Before you start, make sure you have Node.js and npm installed on your machine.
 
-### State Management:
+1. Clone this repository:
 
-Implement a robust state management system to handle:
+    ```bash
+    git clone https://github.com/AymanAkashi/wordly
+    ```
 
-- Target word selection (randomly generate a word at the start of the game).
-- Storing user guesses and their results.
-- Tracking remaining attempts.
+2. Navigate into the project directory
 
-### User Interaction:
+    ```bash
+    cd wordly
+    ```
 
-- Capture user input for word guesses.
-- Validate input (alphabetic characters, word length, etc.).
-- Handle the submission of guesses and update the game state accordingly.
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
+## Usage
 
-### Game Logic:
+```bash
+npm run build && npm start
+```
 
-- Compare the user's guessed word against the target word.
-- Provide feedback to the user about the correctness of the guessed word.
-- End the game when the correct word is guessed or when the attempts reach zero.
+Then, open your web browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-## Code Quality:
+### Game Rules
 
-- Write clean, readable, and maintainable code.
-- Implement best practices for React development.
-- Ensure error handling for edge cases (invalid input, unexpected behavior).
+#### Goal:
 
-## Submission Guidelines:
+Guess a five-letter word within six tries.
 
-- Fork this [repository](https://github.com/OpenDevEd/OpenDevEd-wordle/)) and create a new branch named `wordle-[YOUR NAME]`.
-- Provide clear instructions on how to run the application locally.
-- Include a README file explaining your approach, decisions made, and any additional features implemented.
-- Open a PR.
+#### GamePlay:
 
-## Evaluation Criteria:
+<img src='./public/wordly.png' alt='world game mode' width='300px' height='300px' >
 
-- UI/UX design and functionality.
-- Code quality, structure, and maintainability.
-- State management and logic implementation.
-- Handling of edge cases and error scenarios.
-- Bonus points for additional features or optimizations.
+1. You start with a blank grid of five empty squares.
+2. You guess a valid five-letter word and submit it.
+3. The game provides color-coded feedback for each letter of your guess:
+
+-   Green: The letter is correct and in the right position.
+-   Yellow: The letter is in the word, but in the wrong position.
+-   Gray: The letter is not in the word at all.
+
+4. Use the color clues to refine your next guess.
+5. You have six tries in total to guess the correct word.
