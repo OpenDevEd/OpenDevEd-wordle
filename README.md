@@ -1,57 +1,37 @@
-# OpenDevEd-wordle
-## Requirements:
-Your task is to create a web-based Wordle game using React that adheres to the following specifications:
+Introduction
 
-### User Interface (UI):
+Wordle allows you to guess a hidden five-letter word by inputting your guesses and receiving feedback on each attempt. The game provides hints based on the correctness of your guesses, allowing you to refine your choices until you find the correct word.
+Getting Started
 
-Design a clean and intuitive UI for the game that includes:
+Prerequisites
 
-- Input field for guessing words.
-- Submit button to submit the guess.
-- Display area for previous guesses.
-= Indication of correct letters in correct positions (right letter, right position).
-- Indication of correct letters in the wrong position.
-- Display remaining attempts.
-- End game state UI (upon winning or losing).
+Make sure you have Node.js and npm installed on your local machine.
+Installation
 
-### State Management:
+Clone the repository to your local machine:
 
-Implement a robust state management system to handle:
+bash
 
-- Target word selection (randomly generate a word at the start of the game).
-- Storing user guesses and their results.
-- Tracking remaining attempts.
+    git@github.com:hajar-saidi/OpenDevEd-wordle.git
 
-### User Interaction:
+Navigate to the project directory:
 
-- Capture user input for word guesses.
-- Validate input (alphabetic characters, word length, etc.).
-- Handle the submission of guesses and update the game state accordingly.
+bash
 
+    cd OpenDevEd-wordle
 
-### Game Logic:
+Switch to the appropriate branch:
 
-- Compare the user's guessed word against the target word.
-- Provide feedback to the user about the correctness of the guessed word.
-- End the game when the correct word is guessed or when the attempts reach zero.
+css
 
-## Code Quality:
+    git checkout -b wordle-Hajar
 
-- Write clean, readable, and maintainable code.
-- Implement best practices for React development.
-- Ensure error handling for edge cases (invalid input, unexpected behavior).
+Running the Application
 
-## Submission Guidelines:
+Install dependencies:
 
-- Fork this [repository](https://github.com/OpenDevEd/OpenDevEd-wordle/)) and create a new branch named `wordle-[YOUR NAME]`.
-- Provide clear instructions on how to run the application locally.
-- Include a README file explaining your approach, decisions made, and any additional features implemented.
-- Open a PR.
+    npm install
 
-## Evaluation Criteria:
+Start the development server:
 
-- UI/UX design and functionality.
-- Code quality, structure, and maintainability.
-- State management and logic implementation.
-- Handling of edge cases and error scenarios.
-- Bonus points for additional features or optimizations.
+    npm run dev

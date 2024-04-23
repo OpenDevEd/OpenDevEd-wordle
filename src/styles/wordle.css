@@ -1,0 +1,23 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.game:focus {
+  outline: none;
+}
+
+.status {
+  text-align: center;
+  height: 1rem;
+  margin: 1em;
+  color: salmon;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.status--green {
+  color: #538d4e;
+}
