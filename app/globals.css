@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[class="light"] {
+    --correct-color: 142deg 71% 45%;
+    --present-color: 45deg 93% 47%;
+    --absent-color:  220deg 9% 46%;
+    --key-color: 0deg 0% 0%;
+    --key-bg: 214deg 1% 84%;
+    --key-bg-absent: 220deg 9% 46%;
+    --empty-char-box-border: 218deg 11% 65%;
+    --char-box-border: 0deg 0% 0%;
+    --notif-color: 0deg 0% 100%;
+    --notif-bg: 0deg 0% 0%;
+}
+
+:root[class="dark"] {
+      --correct-color: 142deg 71% 45%;
+      --present-color: 45deg 93% 47%;
+      --absent-color:  220deg 9% 46%;
+      --key-color: 0deg 0% 97%;
+      --key-bg: 200deg 1% 51%;
+      --key-bg-absent: 240deg 2% 23%;
+      --empty-char-box-border: 220deg 9% 46%;
+      --char-box-border: 0deg 0% 100%;
+      --notif-color: 0deg 0% 0%;
+      --notif-bg: 0deg 0% 100%;
+}
+
+@keyframes bounce {
+    0% { 
+      transform: scale(1);
+    }
+    50% { 
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
