@@ -12,13 +12,13 @@ Clone the repository to your local machine:
 
 bash
 
-git@github.com:hajar-saidi/OpenDevEd-wordle.git
+    git@github.com:hajar-saidi/OpenDevEd-wordle.git
 
 Navigate to the project directory:
 
 bash
 
-cd OpenDevEd-wordle
+    cd OpenDevEd-wordle
 
 Switch to the appropriate branch:
 
@@ -28,12 +28,10 @@ css
 
 Running the Application
 
-    Install dependencies:
+Install dependencies:
 
-npm install
+    npm install
 
 Start the development server:
 
-arduino
-
-npm run dev
+    npm run dev
