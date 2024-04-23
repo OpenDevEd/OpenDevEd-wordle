@@ -8,9 +8,9 @@ Prerequisites
 Make sure you have Node.js and npm installed on your local machine.
 Installation
 
-    Clone the repository to your local machine:
+Clone the repository to your local machine:
 
-    bash
+bash
 
 git@github.com:hajar-saidi/OpenDevEd-wordle.git
 
