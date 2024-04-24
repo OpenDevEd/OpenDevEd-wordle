@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Wordle Game
 
-Currently, two official plugins are available:
+![Wordle Game Demo](demo.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+This project is a web-based implementation of the popular Wordle game, built using ReactJS, Zustand for state management, Tailwind CSS for styling, and Hashmap for efficient data retrieval.
 
-## Expanding the ESLint configuration
+### Features
+- **Interactive Gameplay**: Users can guess words and receive feedback on their guesses.
+- **Responsive Design**: The game is designed to work seamlessly on various screen sizes.
+- **State Management with Zustand**: Zustand is used for state management, providing a simple and efficient solution.
+- **Stylish UI with Tailwind CSS**: Tailwind CSS is utilized to style the game interface, providing a modern and visually appealing experience.
+- **Fast Data Retrieval with Hashmap**: Hashmap is employed to quickly retrieve word data, ensuring smooth gameplay.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
+- Node.js installed on your machine
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/wordle-game.git
+2. Navigate into the project directory:
+    ```bash  
+    cd OpenDevEd-wordle
+3. Navigate into my branch
+    ```bash
+    git checkout wordle-ytijani
+4. run this commands
+    ```bash
+    npm install && npm run dev
